@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1a242a
+}
+
+.container{
+    position: relative;
+    width: 0rem;
+    height: 0rem;
+    background: #37444b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5rem;
+    transition: 500ms;
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -1.5rem;
+        width: 4rem;
+        height: 4rem;
+        background: #37444b;
+        border-radius: 0.5rem;
+        opacity: 0;
+        transform: rotate(45deg);
+        transition: 500ms;
+    }
+    .content{
+        font-size: 1.5rem;
+        min-width: 40rem;
+        padding: 4rem;
+        color: #fff;
+        opacity: 0;
+        transition: 500ms;
+        transform: scale(0);
+    }
+    .toggleBtn{
+        position: absolute;
+        bottom: 2rem;
+        min-width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        background: #0bcf9c;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 500ms;
+        &::before{
+            content: '+';
+            font-size: 3rem;
+            color: #fff;
+        }
+    }
+    &.active .content{
+        opacity: 1;
+        transition-delay: 500ms;
+        transform: scale(1);
+    }
+    &.active .toggleBtn{
+        bottom: -9rem;
+        transform: rotate(135deg);
+        background: #ff5a57;
+    }
+    &.active{
+        &::before{
+            opacity: 1;
+            transition-delay: 500ms;
+        }
+        width: 40rem;
+        height: 40rem;
+        transition-delay: 500ms;
+    }
+}

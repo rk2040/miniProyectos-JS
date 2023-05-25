@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(45deg, #f06291, #fffde7);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 3rem rgb(187, 130, 130);
+  background-color: azure;
+}
+.calculator #display {
+  color: black;
+  font-size: 4rem;
+  height: 10rem;
+  width: auto;
+  display: flex;
+  align-items: end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.calculator #equal {
+  height: 13rem;
+}
+.calculator #clear {
+  background-color: #ffd5d8;
+  color: #fc4552;
+}
+.calculator .btn-number {
+  background-color: #c3eaff;
+  color: #000000;
+}
+.calculator .btn-operator {
+  background-color: #ffd0fb;
+  color: #000000;
+}
+.calculator .btn-equal {
+  background-color: #adf9a7;
+  color: #000000;
+}
+.calculator.dark {
+  background-color: #000000;
+}
+.calculator.dark #display {
+  color: #fff;
+}
+.calculator.dark #clear {
+  background-color: #ff5050;
+  color: #fff;
+}
+.calculator.dark .btn-number {
+  background-color: #9600bf;
+  color: #fff;
+}
+.calculator.dark .btn-operator {
+  background-color: #db7500;
+  color: #fff;
+}
+.calculator.dark .btn-equal {
+  background-color: #ff5050;
+  color: #fff;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+.theme-toggler::before {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #333;
+  z-index: -1;
+}
+
+.theme-toggler.active {
+  color: #333;
+}
+.theme-toggler.active::before {
+  background-color: #fff;
+}
+
+button {
+  width: 6rem;
+  height: 6rem;
+  border: none;
+  border-radius: 3rem;
+  margin: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=styles.css.map */
