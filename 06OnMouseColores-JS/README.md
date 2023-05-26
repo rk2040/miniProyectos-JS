@@ -17,7 +17,7 @@ Este proyecto es una implementación de cambio de colores en JavaScript utilizan
 2. Accede al directorio del proyecto: 
 
    ```shell
-   06OnMouseColores-JS
+   cd 06OnMouseColores-JS
 
 2. Abre el archivo index.html en tu navegador web.
 
