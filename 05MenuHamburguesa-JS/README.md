@@ -12,9 +12,15 @@ Este proyecto consiste en la implementación de un menú hamburguesa animado uti
 
 ## Instalación
 
-1. Clona el repositorio: `git clone https://github.com/rk2040/miniProyectos-JS.git`
+1. Clona el repositorio: 
 
-2. Accede al directorio del proyecto: `cd 05MenuHamburguesa-JS`
+   ```shell
+   git clone https://github.com/rk2040/miniProyectos-JS.git
+
+2. Accede al directorio del proyecto: 
+
+   ```shell
+   cd 05MenuHamburguesa-JS
 
 ## Uso
 1. Abre el archivo `index.html` en tu navegador.
