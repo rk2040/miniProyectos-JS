@@ -1,4 +1,4 @@
-#  MenuHamburguesa-JS
+#  Cambio de Color e Imagen-JS
 
 ## Descripción
 
