@@ -14,12 +14,14 @@ Este proyecto es una implementación de un cambio de color e imagen al pasar el 
 1. Clona el repositorio: 
 
    ```shell
-   git clone https://github.com/rk2040/ToggleCambioColor-JS.git
+   git clone https://github.com/rk2040/miniProyectos-JS.git
 
 2. Accede al directorio del proyecto: 
 
    ```shell
    cd 07ToggleCambioColor-JS
+   
+3. Abre el archivo index.html en tu navegador web.
 
 ## Uso
 1. Abre el archivo `index.html` en tu navegador.
