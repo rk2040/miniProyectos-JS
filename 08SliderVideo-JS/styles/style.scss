@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+section{
+    background: #111;
+    min-height: 100vh;
+
+    .bannerVideo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+
+            &.active{
+                opacity: 1;
+            }
+        }
+    }
+
+    .container{
+        position: relative;
+        padding: 0 10rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 100vh;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            backdrop-filter: blur(1rem);
+        }
+
+        header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem 10rem;
+
+            .logo{
+                font-size: 2.5rem;
+                font-weight: 800;
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            ul{
+                position: relative;
+                display: flex;
+                li{
+                    list-style: none;
+                    margin: 0 2rem;
+                    a{
+                        font-size: 1.5rem;
+                        text-decoration: none;
+                        color: #fff;
+                        padding: 0.4rem 1rem;
+                        &:hover{
+                            background: #fff;
+                            border-radius: 0.5rem;
+                            color: #111;
+                        }
+                        &.active{
+                            background: #fff;
+                            border-radius: 0.5rem;
+                            color: #111;
+                        }
+                    }
+                }
+            }
+
+            .menuIcon{
+                display: none;
+
+            }
+        }
+
+        .content{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .bannerText{
+                position: relative;
+                max-width: 70rem;
+                font-size: 1.5rem;
+                div{
+                    display: none;
+                    transition: 500ms ease-in-out;
+                    h2{
+                        color: #fff;
+                        font-size: 4rem;
+                        font-weight: 700;
+                        line-height: 1rem;
+                    }
+                    p{
+                        color: #fff;
+                        font-size: 1.5rem;
+                        margin: 2rem 0;
+                    }
+                    &.active{
+                        display: initial;
+                    }
+                }
+            }
+        }
+
+        .control{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            li{
+                width: 8rem;
+                height: 8rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+                cursor: pointer;
+                &:hover{
+                    background: #a9a9a9;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:991px){
+    section{
+        .container{
+            padding: 2rem;
+            &::before{
+                width: 100%;
+            }
+            header{
+                padding: 1rem 2rem;
+                ul{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100vh;
+                    background: #fff;
+                    opacity: 0.9;
+                    z-index: 1000;
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    li{
+                        text-align: center;
+                        margin: 1rem;
+                        a{
+                            //color: #a9a9a9;
+                            color: #111;
+                            font-size: 2rem;
+                            font-weight: 500;
+                            &:hover{
+                                color: #ff0000;
+                            }
+                        }
+                    }
+                }
+
+                .menuIcon{
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    width: 5rem;
+                    height: 5rem;
+                    display: initial;
+                    z-index: 10000;
+                    background: #fff url(../assets/img/menu.png);
+                    background-size: 3rem;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    cursor: pointer;
+                    &.active{
+                        background: #fff url(../assets/img/close.png);
+                        background-size: 2.5rem;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    }
+                }
+
+                &.active{
+                    ul{
+                        display: flex;
+                    }
+                }
+            }
+    
+            .content{
+                .bannerText{
+                    max-width: 100%;
+                    text-align: center;
+                    div{
+                        h2{
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+
+            .control{
+                li{
+                    width: 6rem;
+                    height: 6rem;
+                }
+            }
+        }
+    }
+}
