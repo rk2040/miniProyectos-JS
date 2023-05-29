@@ -18,7 +18,7 @@ Este proyecto es una implementación de un slider de videos utilizando JavaScrip
 2. Accede al directorio del proyecto: 
 
    ```shell
-   cd SliderVideo-JS.git
+   cd 08SliderVideo-JS.git
 
 3. Abre el archivo index.html en tu navegador web.
 
