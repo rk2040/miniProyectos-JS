@@ -12,14 +12,14 @@ Este proyecto es una implementación de cambio de colores en JavaScript utilizan
 1. Clona este repositorio en tu máquina local:
 
    ```shell
-   git clone https://github.com/rk2040/togggleDarkTheme-JS.git
+   git clone https://github.com/rk2040/miniProyectos-JS.git
 
 2. Accede al directorio del proyecto: 
 
    ```shell
    cd 06OnMouseColores-JS
 
-2. Abre el archivo index.html en tu navegador web.
+3. Abre el archivo index.html en tu navegador web.
 
 ## Uso
 
