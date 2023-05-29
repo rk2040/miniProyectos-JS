@@ -13,9 +13,14 @@ Este proyecto implementa un sistema de toggle en JavaScript para mostrar u ocult
 1. Clona este repositorio en tu máquina local:
 
    ```shell
-   git clone https://github.com/rk2040/toggleTextoDesplegable-JS.git
+   git clone https://github.com/rk2040/miniProyectos-JS.git
 
-2. Abre el archivo index.html en tu navegador web.
+2. Accede al directorio del proyecto: 
+
+   ```shell
+   cd 03Toggle-JS
+
+3. Abre el archivo index.html en tu navegador web.
 
 ## Uso
 
