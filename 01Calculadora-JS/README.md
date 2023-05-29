@@ -15,9 +15,14 @@ Este es un proyecto de una calculadora desarrollada en JavaScript. Permite reali
 1. Clona este repositorio en tu máquina local:
 
    ```shell
-   git clone https://github.com/rk2040/calculadora-JS.git
+   git clone https://github.com/rk2040/miniProyectos-JS.git
+   
+2. Accede al directorio del proyecto: 
 
-2. Abre el archivo index.html en tu navegador web.
+   ```shell
+   cd 01Calculadora-JS
+
+3. Abre el archivo index.html en tu navegador web.
 
 ## Uso
 
