@@ -1,4 +1,4 @@
-# togggleDarkTheme-JS / Cambio de Tema Oscuro en JavaScript
+# toggleDarkTheme-JS / Cambio de Tema Oscuro en JavaScript
 
 Este proyecto implementa un cambio de tema oscuro mediante un boton toggle utilizando JavaScript. Proporciona una forma sencilla de permitir a los usuarios alternar entre un tema claro y oscuro en una página web. Solamente se realizo el boton toggle a modo de prueba.
 
@@ -13,9 +13,14 @@ Este proyecto implementa un cambio de tema oscuro mediante un boton toggle utili
 1. Clona este repositorio en tu máquina local:
 
    ```shell
-   git clone https://github.com/rk2040/togggleDarkTheme-JS.git
+   git clone https://github.com/rk2040/miniProyectos-JS.git
 
-2. Abre el archivo index.html en tu navegador web.
+2. Accede al directorio del proyecto: 
+
+   ```shell
+   cd 04DarkTheme-JS
+
+3. Abre el archivo index.html en tu navegador web.
 
 ## Uso
 
