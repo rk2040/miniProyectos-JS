@@ -14,9 +14,14 @@ Este es un proyecto que implementa solo un menú lateral con efectos utilizando 
 1. Clona este repositorio en tu máquina local:
 
    ```shell
-   git clone https://github.com/rk2040/menuHover-JS-left.git
+   git clone https://github.com/rk2040/miniProyectos-JS.git
 
-2. Abre el archivo index.html en tu navegador web.
+2. Accede al directorio del proyecto: 
+
+   ```shell
+   cd 02MenuHover-JS
+
+3. Abre el archivo index.html en tu navegador web.
 
 ## Uso
 
