@@ -1,0 +1,23 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #ffe100;
+    cursor: url(./img/cursor.svg), auto;
+    transition: 500ms;
+}
+
+svg{
+    width: 20rem;
+}
