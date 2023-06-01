@@ -18,7 +18,7 @@ Este proyecto es una implementación de un efecto simple de parallax utilizando 
 2. Accede al directorio del proyecto: 
 
    ```shell
-   cd 11Parallax01-JS.git
+   cd 11Parallax01-JS
 
 
 ## Uso
