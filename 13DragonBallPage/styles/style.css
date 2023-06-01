@@ -83,6 +83,12 @@ main .sec .content h2 {
 main .sec .content p {
   color: #fff;
   font-size: 2rem;
+  word-spacing: 0.5rem;
+}
+main .sec .content li {
+  color: #fff;
+  font-size: 2rem;
+  word-spacing: 0.5rem;
 }
 
 #lastray {

@@ -4,7 +4,7 @@ setTimeout( ()=>{
     document.getElementById('loader').className += 'opzero';
     document.getElementById('lastray').className += ' finalray';
     document.body.className += "whitebk";
-},3500);
+},2000);
 
 
 gsap.to("#bg",{
