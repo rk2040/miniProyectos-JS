@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./script.js" defer></script>
+    <!-- Parallax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+</head>
+<body>
+    <section class="banner">
+        <div class="container">
+            <div id="scene">
+                <h2 id="text">
+                    <span data-depth-y="-2">La</span>
+                    <span data-depth-y="2">S</span>
+                    <span data-depth-y="-1">a</span>
+                    <span data-depth-y="3">m</span>
+                    <span data-depth-y="-1">o</span>
+                    <span data-depth-y="2">y</span>
+                    <span data-depth-y="-2">el</span>
+                    <span data-depth-y="2.2">S</span>
+                    <span data-depth-y="-2">i</span>
+                    <span data-depth-y="-1">a</span>
+                    <span data-depth-y="2.5">m</span>
+                    <span data-depth-y="-2">e</span>
+                </h2>
+
+                    <div class="layer z" data-depth-y="-0.5" data-depth="-0.2"><img src="./img/img1.png" alt=""></div>
+                    <div class="layer" data-depth-y="0.4" data-depth="-0.5"><img src="./img/img2.png" alt=""></div>
+                    <div class="layer z" data-depth-y="0.3" data-depth="-0.8"><img src="./img/img3.png" alt=""></div>
+                    <div class="layer" data-depth-y="0.5" data-depth="0.5"><img src="./img/img4.png" alt=""></div>
+                    <div class="layer" data-depth-y="-0.4" data-depth="-0.6"><img src="./img/img5.png" alt=""></div>
+                    <div class="layer z" data-depth-y="0.1" data-depth="0.9"><img src="./img/img6.png" alt=""></div>
+                    <div class="layer z" data-depth-y="-0.2" data-depth="-0.5"><img src="./img/img7.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
