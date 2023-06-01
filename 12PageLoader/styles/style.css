@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pageLoader {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: #272727;
+}
+.pageLoader .txt {
+  position: relative;
+  color: #666;
+  text-align: center;
+  top: 40%;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.pageLoader .spinner {
+  position: relative;
+  top: 35%;
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
+  background-color: #fafafa;
+  border-radius: 50%;
+  animation: sk-scaleout 1000ms infinite ease-in-out;
+}
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
