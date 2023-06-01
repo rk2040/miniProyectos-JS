@@ -12,7 +12,7 @@ Este proyecto es una implementación de seguimiento del movimiento del cursor ut
 1. Clona este repositorio en tu máquina local:
 
    ```shell
-   git clone https://github.com/rk2040/ToggleCambioColor-JS.git
+   git clone https://github.com/rk2040/miniProyectos-JS.git
 
 2. Accede al directorio del proyecto: 
 
