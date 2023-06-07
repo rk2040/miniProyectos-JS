@@ -52,6 +52,25 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp);
 
+//SECTION ACTIVE "puntito navBar"
+const sections = document.querySelectorAll('section[id]');   //etiqueta section
+
+function scrollActive(){
+    const scrollY = window.pageYOffset;
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop -58;
+        const sectionId = current.getAttribute('id');
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
+        }
+        else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link');
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive);
 
 // SCROLL REVEAL
 const sr = ScrollReveal( {
@@ -59,7 +78,7 @@ const sr = ScrollReveal( {
     distance: '6rem',
     duration: 2000,
     delay: 400,
-    reset: true // para que vuelva a hacer el efecto para que al hacer scroll tambien haga efecto
+    //reset: true // para que vuelva a hacer el efecto para que al hacer scroll tambien haga efecto
 } )
 sr.reveal(`.home-swiper, .new-swiper, .newsletter__container`)
 
