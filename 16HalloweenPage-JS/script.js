@@ -2,6 +2,7 @@
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
+const navLink = document.querySelectorAll('.nav__link');
 
 if(navToggle){
     navToggle.addEventListener('click', ()=>{
@@ -14,6 +15,14 @@ if(navClose){
     })
 }
 
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.remove('show-menu');
+}
+navLink.forEach(item => item.addEventListener('click', linkAction));
+
+
+
 // SCROLL REVEAL
 const sr = ScrollReveal( {
     origin: 'top',
@@ -23,3 +32,9 @@ const sr = ScrollReveal( {
     reset: true // para que vuelva a hacer el efecto para que al hacer scroll tambien haga efecto
 } )
 sr.reveal(`.home-swiper, .new-swiper, .newsletter__container`)
+
+sr.reveal(`.category__data, .trick__content, .footer__content`, {interval:150})
+
+sr.reveal(`.about__data, .discount__img`, {origin: 'left'})
+
+sr.reveal(`.about__img, .discount__data`, {origin: 'right'})
