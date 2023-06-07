@@ -21,6 +21,17 @@ function linkAction(){
 }
 navLink.forEach(item => item.addEventListener('click', linkAction));
 
+//SWIPER
+const homeSwiper = new Swiper('.home-swiper', {
+    //direction: 'vertical',
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    },
+})
+
 
 
 // SCROLL REVEAL
