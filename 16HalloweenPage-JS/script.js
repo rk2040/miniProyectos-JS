@@ -32,6 +32,25 @@ const homeSwiper = new Swiper('.home-swiper', {
     },
 })
 
+const newSwiper = new Swiper('.new-swiper', {
+    spaceBetween: 16,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    }
+})
+
+// SCROLL UP
+function scrollUp(){
+    const scrollUp = document.getElementById('scroll-up');
+
+    if(this.scrollY >= 460) scrollUp.classList.add('show-scroll'); 
+    else scrollUp.classList.remove('show-scroll');
+}
+window.addEventListener('scroll', scrollUp);
 
 
 // SCROLL REVEAL
