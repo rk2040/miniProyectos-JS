@@ -62,8 +62,8 @@ html {
   right: 0;
   width: 100%;
   background: #552c21;
-  border-bottom-left-radius: 0.8rem;
-  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 1.1rem;
+  border-bottom-right-radius: 1.1rem;
   animation: load 2500ms infinite;
 }
 .loading-wrapp .inner .fill::after {
@@ -75,6 +75,7 @@ html {
   display: block;
   background-color: #c69684;
   width: 100%;
+  animation: liquido 2500ms infinite;
 }
 
 @keyframes load {
@@ -93,4 +94,40 @@ html {
   100% {
     top: 6.5rem;
   }
+}
+@keyframes liquido {
+  0% {
+    opacity: 0;
+    top: -1rem;
+  }
+  22% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  35% {
+    height: 3px;
+  }
+  55% {
+    height: 4px;
+  }
+  60% {
+    height: 5px;
+  }
+  96% {
+    height: 5.5px;
+  }
+  100% {
+    height: 0;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  row-gap: 4rem;
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
