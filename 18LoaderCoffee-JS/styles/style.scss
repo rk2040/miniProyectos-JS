@@ -67,16 +67,26 @@ html{
             border-bottom-left-radius: .8rem;
             border-bottom-right-radius: .8rem;
 
+            animation: load 2500ms infinite;
+
             &::after{
                 content: '';
                 position: absolute;
                 top: 0;
                 left: 0;
-                height: .2rem;
+                height: .1rem;
                 display: block;
                 background-color: #c69684;
                 width: 100%;
             }
         }
     }
+}
+
+@keyframes load{
+    0% {top: 6.5rem}
+    70% {top: 2rem}
+    90% {top: 0}
+    95% {top: 0}
+    100% {top: 6.5rem}
 }

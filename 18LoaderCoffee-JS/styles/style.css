@@ -64,14 +64,33 @@ html {
   background: #552c21;
   border-bottom-left-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
+  animation: load 2500ms infinite;
 }
 .loading-wrapp .inner .fill::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  height: 0.2rem;
+  height: 0.1rem;
   display: block;
   background-color: #c69684;
   width: 100%;
+}
+
+@keyframes load {
+  0% {
+    top: 6.5rem;
+  }
+  70% {
+    top: 2rem;
+  }
+  90% {
+    top: 0;
+  }
+  95% {
+    top: 0;
+  }
+  100% {
+    top: 6.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
