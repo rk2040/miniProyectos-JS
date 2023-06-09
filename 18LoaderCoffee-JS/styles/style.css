@@ -1,1 +1,77 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.loading-wrapp {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #e3b948;
+  z-index: 1000;
+}
+.loading-wrapp .inner {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  top: 45%;
+  width: 6.5rem;
+  height: 6.5rem;
+  border: solid #6a6a6a;
+  border-bottom-right-radius: 1.2rem;
+  border-bottom-left-radius: 1.2rem;
+  background: #fff;
+}
+.loading-wrapp .inner::after {
+  content: "";
+  position: absolute;
+  right: -2.8rem;
+  top: 0.4rem;
+  display: block;
+  width: 2rem;
+  height: 3rem;
+  border: 0.4rem solid #6a6a6a;
+  border-bottom-right-radius: 5rem;
+  border-top-right-radius: 3rem;
+}
+.loading-wrapp .inner::before {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  top: 1rem;
+  left: 0.5rem;
+  width: 1.7rem;
+  height: 70%;
+  background-color: rgba(200, 200, 213, 0.6);
+  border-bottom-left-radius: 4rem 12rem;
+  border-top-left-radius: 4rem 12rem;
+}
+.loading-wrapp .inner .fill {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #552c21;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+.loading-wrapp .inner .fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.2rem;
+  display: block;
+  background-color: #c69684;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
