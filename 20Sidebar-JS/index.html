@@ -15,13 +15,13 @@
     <header class="header">
         <div class="header__container">
             <img src="./img/avatar.jpg" alt="" class="header__img">
-        </div>
-        <div class="header__search">
-            <input type="search" class="header__search" placeholder="Buscar...">
-            <i class='bx bx-search-alt-2'></i>
-        </div>
-        <div class="header__toggle">
-            <i class='bx bx-menu' ></i>
+            <div class="header__search">
+                <input type="search" class="header__input" placeholder="Buscar...">
+                <i class='bx bx-search-alt-2'></i>
+            </div>
+            <div class="header__toggle">
+                <i class='bx bx-menu' ></i>
+            </div>
         </div>
     </header>
     <!-- Nav -->
@@ -33,7 +33,7 @@
                     <span class="nav__logo-name">RK2040</span>
                 </a>
                 <div class="nav__list">
-                    <div class="nav__items">
+                    <div class="nav__items nav__icon">
                         <h3 class="nav__subtitle">Profile</h3>
                         <a href="#" class="nav__link active">
                             <i class='bx bx-home' ></i>
@@ -52,11 +52,11 @@
                                     <a href="#" class="nav__dropdown-item">Accounts</a>
                                 </div>
                             </div>
-                            <a href="#" class="nav__link">
-                                <i class='bx bx-message-rounded-dots' ></i>
-                                <span class="nav__name">Messages</span>
-                            </a>
                         </div>
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-message-rounded-dots nav__icon' ></i>
+                            <span class="nav__name">Messages</span>
+                        </a>
                     </div>
 
                     <div class="nav__items">
@@ -76,11 +76,11 @@
                             </div>
                         </div>
                         <a href="#" class="nav__link">
-                            <i class='bx bx-compass' ></i>
+                            <i class='bx bx-compass nav__icon' ></i>
                             <span class="nav__name">Explore</span>
                         </a>
                         <a href="#" class="nav__link">
-                            <i class='bx bx-bookmark' ></i>
+                            <i class='bx bx-bookmark nav__icon' ></i>
                             <span class="nav__name">Saved</span>
                         </a>
                     </div>
@@ -88,10 +88,11 @@
             </div>
 
             <a href="#" class="nav__link nav__logout">
-                <i class='bx bx-log-out' ></i>
+                <i class='bx bx-log-out nav__icon' ></i>
                 <span class="nav__name">Log Out</span>
             </a>
         </nav>
+    </div>
         <!-- Contenido -->
         <main>
             <section>
@@ -106,6 +107,5 @@
                 </p>
             </section>
         </main>
-    </div>
 </body>
 </html>
