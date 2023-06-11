@@ -1,1 +1,128 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#a6560f, #f4bc62);
+  overflow: hidden;
+  perspective: 180rem;
+  text-align: center;
+  margin: 0 2rem;
+}
+body .cards {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 2rem 2rem rgba(0, 0, 0, 0.17);
+  display: inline-block;
+  padding: 3rem 3.5rem;
+  perspective: 180rem;
+  text-align: left;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  transform: rotateX(11deg) rotateY(16.5deg);
+  min-width: 59.5rem;
+}
+body .cards h1 {
+  color: #563e09;
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: -0.1rem;
+  margin-bottom: 3rem;
+  transform: translateZ(3.2rem);
+}
+body .cards h3 {
+  color: #c25c08;
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+  transform: translateZ(2.5rem);
+}
+body .cards .card {
+  border-radius: 1.5rem;
+  box-shadow: 0.5rem 0.5rem 2rem -0.5rem rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  height: 25rem;
+  overflow: hidden;
+  perspective: 120rem;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(3.5rem);
+  transition: transform 200ms ease-out;
+  width: 17.5rem;
+  text-align: center;
+}
+body .cards .card:not(:last-child) {
+  margin-right: 3rem;
+}
+body .cards .card .card__bg {
+  bottom: -5rem;
+  left: -5rem;
+  position: absolute;
+  right: -5rem;
+  top: -5rem;
+  transform-origin: 50% 50%;
+  transform: translateZ(-5rem);
+  z-index: -1;
+}
+body .cards .card .card__img {
+  position: relative;
+  height: 100%;
+}
+body .cards .card .card__text {
+  align-items: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.55) 100%);
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+body .cards .card .card__text .card__title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0 1rem;
+  margin-bottom: 0.3rem;
+}
+body .cards .card__one .card__img {
+  top: 1.4rem;
+  right: -1rem;
+  height: 110%;
+}
+body .cards .card__one .card__bg {
+  background: url("../img/bg3.png") center/cover no-repeat;
+}
+body .cards .card__two .card__img {
+  top: 2.5rem;
+}
+body .cards .card__two .card__bg {
+  background: url("../img/bg1.jpg") center/cover no-repeat;
+}
+body .cards .card__three .card__img {
+  top: 0.5rem;
+  right: -0.4rem;
+  height: 110%;
+}
+body .cards .card__three .card__bg {
+  background: url("../img/bg2.jpg") center/cover no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    transform: scale(0.67);
+  }
+}/*# sourceMappingURL=style.css.map */
